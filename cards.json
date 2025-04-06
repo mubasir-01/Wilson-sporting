@@ -1,0 +1,69 @@
+var data=[
+
+    {
+        "img" : "image/tss-football-banner-290x180 (1).png",
+        "title" : "Football",
+        "des" : "",
+        "price": "$49.99-$79.99",
+        "btn" : "Add to Cart"
+    },
+    
+    {
+        "img" :"image/volleyball-290x180.png",
+        "title" : "Volley Ball",
+    
+           "des" : "",
+        "price": "$39.99-$99.99",
+        "btn" : "ADD to Cart "
+    },
+    {
+        "img" : "image/badminton-290x180.png",
+        "title" : "Badminton",
+        "des" : "",
+        "price": "$29.99-$79.99",
+        "btn" : "Add to cart" 
+    },
+    {
+        "img" : "image/tennis6-290x180.png",
+        "title" : "Tennis Equipment",
+        "des" : " ",
+        "price": "$10.00-$69.99",
+        "btn" : "Add to cart "
+    },
+    {
+        "img" : "image/basketball-290x180.png",
+        "title" : "Basketball",
+        "des" : "",
+        "price": "$9.99-$99.99",
+        "btn" : " ADD to Cart"
+    },{
+        "img" : "image/tabletennist2-290x180.png",
+        "title" : "Table Tennis",
+        "des" : "",
+        "price": "$19.99-$89.99",
+        "btn" : " ADD to Cart"
+    },
+    {
+        "img" : "image/golf5-290x180.png",
+        "title" : "Golf Materials",
+        "des" : " ",
+        "price": "$14.99-$54.99",
+        "btn" : "ADD to Cart"
+    },
+    
+    {
+        "img" : "image/atheletics-290x180.jpg",
+        "title" : "Sport Shoes",
+        "des" : "",
+        "price": "$9.99-$49.99",
+        "btn" : " ADD to Cart"
+    },
+    {
+        "img" : "image/snooker-homepage-banner-604x375.jpg",
+        "title" : " Snooker",
+        "des" : "",
+        "price": "$29.99-$139.99",
+        "btn" : " ADD to Cart"
+    }
+    
+    ]

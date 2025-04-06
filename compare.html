@@ -1,0 +1,511 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here"/>
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="compare.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <title>Wilson Sporting goods</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+       
+
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    </head>
+    <body>
+        <!-- Marquee -->
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            &#128508; MEGA OFFER UP TO 60% OFF Grab Your Deal Now!
+        </marquee>
+    
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="image/1.png" alt="Wilson Logo" height="60px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feedback.html">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contactus.html">Contactus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">  Aboutus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Sitemap.html">SiteMap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.HTML">Prodcuts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="compare.html">  Compare</a>
+                        </li>
+                        <button id="dark-mode-toggle" class="btn btn-dark ms-2">
+                            <i class="fas fa-moon"></i> Dark Mode
+                        </button>
+                       
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- <img src="image/cs4129_aa-global-reebok-outdoor-boxed-basketball-front-and-back-of-ball-large-pic.jpg" alt=""> -->
+        <!-- Main Content -->
+        <h1  class="mt-2">Wilson Sporting Goods</h1>
+    
+        <div class="container">
+            <h1 class="text-center display-3 text-uppercase my-5 fw-bold" id="bcd" >Compare Page</h1>
+    
+            <div class="row">
+                <!-- Adidas Column -->
+                <div class="col-lg-3 col-md-6"  data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="form-group" >
+                        <label style="color: blue; font-size: 20px;" class="fw-bold">Adidas</label>
+                        <select id="brand1" onchange="Brand_One()" class="form-select">
+                            <option selected class="text-warning fw-bold">Select...</option>
+                            <option class="text-danger fw-bold">Racket</option>
+                            <option class="text-danger fw-bold">Football</option>
+                            <option class="text-danger fw-bold">Volleyball</option>
+                            <option class="text-danger fw-bold">Basketball</option>
+                            <option class="text-danger fw-bold">Shoes</option>
+                        </select>
+                    </div>
+                    <div class="card border-4 border-warning" >
+                        <div class="card-body text-center">
+                            <img src="image/adiddas-150x150.png" class="img-fluid text-center" style="height: 290px; width: 380px;" id="img1">
+                            <div class="card-title text-center">
+                                <h2 id="text1"  class="fw-bold text-center">Adidas Equipment</h2>
+                                <h5 id="text2" style="color: goldenrod;"></h5>
+                                <p id="text3" class="text-center text-danger fw-bold"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Puma Column -->
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="2500">
+                    <div class="form-group">
+                        <label style="color: blue; font-size: 20px;" class="fw-bold">Reebook</label>
+                        <select id="brand2" onchange="Brand_two()" class="form-select">
+                            <option selected class="text-warning fw-bold">Select...</option>
+                            <option class="text-danger fw-bold">Racket</option>
+                            <option class="text-danger fw-bold">Football</option>
+                            <option class="text-danger fw-bold">Volleyball</option>
+                            <option class="text-danger fw-bold">Basketball</option>
+                            <option class="text-danger fw-bold">Shoes</option>
+                        </select>
+                    </div>
+                    <div class="card border-4 border-warning">
+                        <div class="card-body text-center">
+                            <img src="image/Reebok_Logo_2x_ad023ce8-db1d-434d-b9d6-8ceefe5c32c9.png" class="img-fluid text-center" style="width: 380px; height: 290px;" id="img2">
+                            <div class="card-title text-center">
+                                <h2  class="fw-bold text-center" id="text4">Reebok Material</h2>
+                                <h5 id="text5"></h5>
+                                <p id="text6" class="text-center text-danger fw-bold"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Nike Column -->
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="3000">
+                    <div class="form-group">
+                        <label style="color: blue; font-size: 20px;" class="fw-bold">Nike</label>
+                        <select id="brand3" onchange="Brand_Three()" class="form-select">
+                            <option selected class="text-warning fw-bold">Select...</option>
+                            <option class="text-danger fw-bold">Racket</option>
+                            <option class="text-danger fw-bold">Football</option>
+                            <option class="text-danger fw-bold">Volleyball</option>
+                           
+                            <option class="text-danger fw-bold">Basketball</option>
+                            <option class="text-danger fw-bold">Shoes</option>
+                        </select>
+                    </div>
+                    <div class="card border-4 border-warning">
+                        <div class="card-body text-center">
+                            <img src="image/002-nike-logos-swoosh-white.jpg" class="img-fluid text-center" style="width: 380px; height: 290px;" id="img3">
+                            <div class="card-title text-center">
+                                <h2 id="text7"class="fw-bold text-center">Nike Equipment</h2>
+                                <h5 id="text8"></h5>
+                                <p id="text9" class="text-center text-danger fw-bold"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Under Armour Column -->
+                <div class="col-lg-3 col-md-6"data-aos="zoom-in" data-aos-duration="2000" >
+                    <div class="form-group">
+                        <label style="color: blue; font-size: 20px;" class="fw-bold"> Puma</label>
+                        <select id="brand4" onchange="Brand_Four()" class="form-select">
+                            <option selected class="text-warning fw-bold">Select...</option>
+                            <option class="text-danger fw-bold">Racket</option>
+                            <option class="text-danger fw-bold">Football</option>
+                            <option class="text-danger fw-bold">Volleyball</option>
+                            <option class="text-danger fw-bold">Basketball</option>
+                            <option class="text-danger fw-bold">Shoes</option>
+                        </select>
+                    </div>
+                    <div class="card border-4  border-warning">
+                        <div class="card-body text-center">
+                            <img src="image/android-chrome-512x512__1_-removebg-preview (3).png" class="img-fluid text-center" style="width: 380px; height: 290px;" id="img4">
+                            <div class="card-title text-center">
+                                <h2 id="text10"  class="fw-bold text-center">Puma Material </h2>
+                                <h5 id="text11"></h5>
+                                <p id="text12" class="text-center text-danger fw-bold"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script>
+            function Brand_One() {
+                var Productone = document.getElementById("brand1").selectedIndex;
+    
+                if (Productone == 1) {
+                    document.getElementById("img1").src = "image/IMG-5404.jpg";
+                    document.getElementById("text1").innerHTML = "Adidas Racket";
+                    document.getElementById("text2").innerHTML = "Price 2000/- PKR";
+                    document.getElementById("text3").innerHTML = "High-quality racket with a 2-year warranty.";
+                }
+                if (Productone == 2) {
+                    document.getElementById("img1").src = "image/1025758_Main_1907770.jpg";
+                    document.getElementById("text1").innerHTML = "Adidas Football";
+                    document.getElementById("text2").innerHTML = "Price 4000/- PKR";
+                    document.getElementById("text3").innerHTML = "FIFA-recommended football.";
+                }
+                if (Productone == 3) {
+                    document.getElementById("img1").src = "image/tango-glider-ball.jpg";
+                    document.getElementById("text1").innerHTML = "Adidas Volleyball";
+                    document.getElementById("text2").innerHTML = "Price 8000/- PKR";
+                    document.getElementById("text3").innerHTML = "Highly recommended volleyball.";
+                }
+                if (Productone == 4) {
+                    document.getElementById("img1").src ="image/all-court-3.0-ball.jpg";
+                    document.getElementById("text1").innerHTML = "Adidas Basketball";
+                    document.getElementById("text2").innerHTML = "Price 1200/- PKR";
+                    document.getElementById("text3").innerHTML = " The Best basketball in the market.";
+                }
+                if (Productone == 5) {
+                    document.getElementById("img1").src ="image/19435521-1_1701267940-1617704810081.jpg";
+                    document.getElementById("text1").innerHTML = "Adidas Shoes";
+                    document.getElementById("text2").innerHTML = "Price 8000/- PKR";
+                    document.getElementById("text3").innerHTML = "Comfortable shoes .";
+                }
+            }
+    
+            function Brand_two() {
+                var Producttwo = document.getElementById("brand2").selectedIndex;
+    
+                if (Producttwo == 1) {
+                    document.getElementById("img2").src = "image/smiley-man-holding-racket-medium-shot.jpg";
+                    document.getElementById("text4").innerHTML = "Reebok Racket";
+                    document.getElementById("text5").innerHTML = "Price 4000/- PKR";
+                    document.getElementById("text6").innerHTML = "High-quality racket by Reebok.";
+                }
+                if (Producttwo == 2) {
+                    document.getElementById("img2").src = "image/reebok fottball.png";
+                    document.getElementById("text4").innerHTML = "Reebok Football";
+                    document.getElementById("text5").innerHTML = "Price 6000/- PKR";
+                    document.getElementById("text6").innerHTML = "Recommended by football clubs.";
+                }
+                if (Producttwo == 3) {
+                    document.getElementById("img2").src = "image/VNLBallMain2-2000.png";
+                    document.getElementById("text4").innerHTML = "Reebok Volleyball";
+                    document.getElementById("text5").innerHTML = "Price 5000/- PKR";
+                    document.getElementById("text6").innerHTML = "Durable synthetic leather cover.";
+                }
+                if (Producttwo == 4) {
+                    document.getElementById("img2").src = "image/cs4129_aa-global-reebok-outdoor-boxed-basketball-front-and-back-of-ball-large-pic.jpg";
+                    document.getElementById("text4").innerHTML = "Reebok Basketball";
+                    document.getElementById("text5").innerHTML = "Price 3000/- PKR";
+                    document.getElementById("text6").innerHTML = "Durable, high-performance basketball.";
+                }
+                if (Producttwo == 5) {
+                    document.getElementById("img2").src = "image/100211390_SLC_eCom-tif.png";
+                    document.getElementById("text4").innerHTML = "Reebok Shoes";
+                    document.getElementById("text5").innerHTML = "Price 6000/- PKR";
+                    document.getElementById("text6").innerHTML = "Durable, high-performance Shoes";
+                }
+            }
+    
+            function Brand_Three() {
+                var Productthree = document.getElementById("brand3").selectedIndex;
+    
+                if (Productthree == 1) {
+                    document.getElementById("img3").src = "image/nike rac.png";
+                    document.getElementById("text7").innerHTML = "Nike Racket";
+                    document.getElementById("text8").innerHTML = "Price 2500/- PKR";
+                    document.getElementById("text9").innerHTML = "High-quality racket for professionals.";
+                }
+                if (Productthree == 2) {
+                    document.getElementById("img3").src = "image/PhotoRoom-20230520_165923_82ace62f-6407-4df6-9f5b-7594b46b7a67.png";
+                    document.getElementById("text7").innerHTML = "Nike Football";
+                    document.getElementById("text8").innerHTML = "Price 4500/- PKR";
+                    document.getElementById("text9").innerHTML = "A premium-quality football, expertly crafted for durability and optimal performance on the field.";
+                }
+                if (Productthree == 3) {
+                    document.getElementById("img3").src = "image/nike volley.jpg";
+                    document.getElementById("text7").innerHTML = "Nike Volleyball";
+                    document.getElementById("text8").innerHTML = "Price 3500/- PKR";
+                    document.getElementById("text9").innerHTML = "Durable volleyball for all levels.";
+                }
+                if (Productthree == 4) {
+                    document.getElementById("img3").src = "image/NK+ELT+ALL+COURT+8P+2.0.jpg";
+                    document.getElementById("text7").innerHTML = "Nike Basketball";
+                    document.getElementById("text8").innerHTML = "Price 2500/- PKR";
+                    document.getElementById("text9").innerHTML = "Professional basketball. a best basketball in the market ";
+                }
+                if (Productthree == 5) {
+                    document.getElementById("img3").src = "image/NIKE+GATO.jpg";
+                    document.getElementById("text7").innerHTML = "Nike Shoes";
+                    document.getElementById("text8").innerHTML = "Price 7000/- PKR";
+                    document.getElementById("text9").innerHTML = "Professional Shoes. a best shoes in the market ";
+                }
+            }
+    
+            function Brand_Four() {
+                var Productfour = document.getElementById("brand4").selectedIndex;
+    
+                if (Productfour == 1) {
+                    document.getElementById("img4").src = "image/NOVA-PADEL-ELITE-CTR-Padel-Racket.jpg";
+                    document.getElementById("text10").innerHTML = "Puma Racket";
+                    document.getElementById("text11").innerHTML = "Price 3200/- PKR";
+                    document.getElementById("text12").innerHTML = " A sturdy, well-balanced racket built for speed, accuracy, and power in every swing";
+                }
+                if (Productfour == 2) {
+                    document.getElementById("img4").src = "image/Borussia-Dortmund-Anniversary-Football.jpg";
+                    document.getElementById("text10").innerHTML = "Puma Football";
+                    document.getElementById("text11").innerHTML = "Price 1000/- PKR";
+                    document.getElementById("text12").innerHTML = " A durable, high-performance ball designed for precision and power on the field";
+}
+if (Productfour == 3) {
+                    document.getElementById("img4").src = "image/download (2).jpg";
+                    document.getElementById("text10").innerHTML = "Puma Volleyball";
+                    document.getElementById("text11").innerHTML = "Price 2500/- PKR";
+                    document.getElementById("text12").innerHTML = "A lightweight, aerodynamic ball crafted for smooth gameplay and controlled spikes..";
+                }
+                if (Productfour == 4) {
+                    document.getElementById("img4").src = "image/PUMA-Basketball.jpg";
+                    document.getElementById("text10").innerHTML = "Puma Basketball";
+                    document.getElementById("text11").innerHTML = "Price 2000/- PKR";
+                    document.getElementById("text12").innerHTML = "A high-grip, bounce-optimized ball perfect for dribbling.";
+
+
+                }
+                if (Productfour == 5) {
+                    document.getElementById("img4").src = "image/Speedcat-OG-Sneakers.jpg";
+                    document.getElementById("text10").innerHTML = "Puma Shoes";
+                    document.getElementById("text11").innerHTML = "Price 5000/- PKR";
+                    document.getElementById("text12").innerHTML = "A high-grip, bounce-optimized shoes perfect for playing.";
+
+
+                }
+}
+
+
+
+  
+</script>
+
+
+<!-- Add this script at the end of your body -->
+
+<script>
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    // Check if dark mode is enabled in localStorage
+    if (localStorage.getItem('dark-mode') === 'enabled') {
+        body.classList.add('dark-mode');
+        toggleButton.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+    }
+
+    // Toggle dark mode
+    toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('dark-mode', 'enabled');
+            toggleButton.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+        } else {
+            localStorage.setItem('dark-mode', 'disabled');
+            toggleButton.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+        }
+    });
+</script>
+
+<div class="container-fluid">
+    <!-- Footer -->
+    <footer
+    class="text-center text-lg-start text-white"
+    style="background-color: #1c2331;
+    width: 100%;"
+    >
+   <!-- Section: Social media -->
+   <section
+   class="d-flex justify-content-between p-4"
+       style="background-color: #6351ce"
+       >
+   <!-- Left -->
+   <div class="me-5">
+   <span>Get connected with us on social networks:</span>
+   </div>
+   <!-- Left -->
+   
+   <!-- Right -->
+   <div>
+   <a href="FACEBOOK.HTML" class="text-white me-4">
+    <i class="fab fa-facebook-f"></i>
+   </a>
+   <a href="X.html" class="text-white me-4">
+    <i class="fab fa-twitter"></i>
+   </a>
+   <a href="" class="text-white me-4">
+    <i class="fab fa-google"></i>
+   </a>
+   <a href="instagram.html" class="text-white me-4">
+    <i class="fab fa-instagram"></i>
+   </a>
+   <a href="linkedian.html" class="text-white me-4">
+    <i class="fab fa-linkedin"></i>
+   </a>
+   <a href="github.html" class="text-white me-4">
+    <i class="fab fa-github"></i>
+   </a>
+   </div>
+   <!-- Right -->
+   </section>
+   <!-- Section: Social media -->
+   
+   <!-- Section: Links  -->
+   <section class="">
+   <div class="container text-center text-md-start mt-5">
+   <!-- Grid row -->
+   <div class="row mt-3">
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+      <!-- Content -->
+      <h6 class="text-uppercase fw-bold">Company name</h6>
+      <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px; background-color: #7c4dff; height: 2px"
+          />
+      <p class="text-light">
+       Wilson Sporting Goods
+      </p>
+    </div>
+    <!-- Grid column -->
+   
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+      <!-- Links -->
+      <h6 class="text-uppercase fw-bold">Gallery</h6>
+      <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px; background-color: #7c4dff; height: 2px"
+          />
+      <p>
+        <a href="football.html" class="text-white">Football</a>
+      </p>
+      <p>
+        <a href="volley.html" class="text-white">VolleyBall</a>
+      </p>
+      <p>
+        <a href="badminton.html" class="text-white">  badminton</a>
+      </p>
+      <p>
+        <a href="basketball.html" class="text-white">BasketBall</a>
+      </p>
+    </div>
+    <!-- Grid column -->
+   
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+      <!-- Links -->
+      <h6 class="text-uppercase fw-bold">Useful links</h6>
+      <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px; background-color: #7c4dff; height: 2px"
+          />
+      <p>
+        <a href="register.html" class="text-white">Regsiter form</a>
+      </p>
+      <p>
+        <a href="payment_form.html" class="text-white">Payment</a>
+      </p>
+      <p>
+        <a href="store.html" class="text-white">Store</a>
+      </p>
+    
+    </div>
+    <!-- Grid column -->
+   
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-light ">
+      <!-- Links -->
+      <h6 class="text-uppercase fw-bold text-light">Contact</h6>
+      <hr
+          class="mb-4 mt-0 d-inline-block mx-auto"
+          style="width: 60px; background-color: #7c4dff; height: 2px"
+          />
+      <p class="text-light"><i class="fas fa-home mr-3 text-white"></i>Stargate Wilson Products</p>
+      <p class="text-light"><i class="fas fa-envelope mr-3"></i> Mubashiraptech2@gmail.com</p>
+      
+      <p class="text-light"><i class="fas fa-print mr-3" ></i> 03003910636</p>
+    </div>
+    <!-- Grid column -->
+   </div>
+   <!-- Grid row -->
+   </div>
+   </section>
+   <!-- Section: Links  -->
+   
+   <!-- Copyright -->
+   <div
+   class="text-center p-3"
+   style="background-color: rgba(0, 0, 0, 0.2)"
+   >
+   © 2025 Copyright:
+   <a class="text-white" href="https://mdbootstrap.com/"
+   >Mubashir.com</a
+   >
+   </div>
+   <!-- Copyright -->
+   </footer>
+   <!-- Footer -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

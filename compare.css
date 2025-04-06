@@ -1,0 +1,314 @@
+
+            body {
+                background-color: white;
+                margin: 0%;
+                padding: 0%;
+            }
+    
+            marquee {
+                color: #ff0000;
+                animation: hehe 2s infinite alternate;
+                font-weight: bolder;
+            }
+    
+            @keyframes hehe {
+                0% { color: #8E0E00; }
+                10% { color: #1F1C18; }
+                20% { color: #8E0E00; }
+                30% { color: #1F1C18; }
+                40% { color: #8E0E00; }
+                50% { color: #1F1C18; }
+                60% { color: #8E0E00; }
+                70% { color: #1F1C18; }
+                80% { color: #8E0E00; }
+                90% { color: #1F1C18; }
+                100% { color: #8E0E00; }
+            }
+    
+            .navbar {
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+    
+            .navbar-brand img {
+                border-radius: 50%;
+                transition: transform 0.3s ease;
+            }
+    
+            .navbar-brand img:hover {
+                transform: scale(1.1);
+            }
+    
+            .navbar-nav .nav-link {
+                color: white !important;
+                font-weight: 500;
+                transition: all 0.3s ease;
+            }
+    
+            .navbar-nav .nav-link:hover {
+                background: rgba(255, 255, 255, 0.1);
+                transform: translateY(-2px);
+            }
+    
+            .navbar-nav .nav-link.active {
+                background: rgba(255, 255, 255, 0.2);
+            }
+    
+            .navbar-toggler {
+                border: none;
+                outline: none;
+                box-shadow: none;
+            }
+    
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+            }
+    
+            .dropdown-menu {
+                border: none;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+    
+            .dropdown-item {
+                color: white !important;
+                transition: all 0.3s ease;
+            }
+    
+            .dropdown-item:hover {
+                background: rgba(255, 255, 255, 0.1);
+            
+            } 
+
+      
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    /* background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460); */
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Background Animation */
+/* @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+} */
+
+/* Card Styling */
+.card {
+    /* background: rgba(40, 40, 60, 0.8); */
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+.card img {
+    border-bottom: 3px solid #ffcc00; /* Same thickness for uniformity */
+    border-radius: 20px 20px 0 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.card-title h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffcc00;
+}
+
+.card-title h5 {
+    color: #ff5733;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn-custom {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(45deg, #ff5733, #ffcc00);
+    color: #1a1a2e;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(255, 87, 51, 0.3);
+    cursor: pointer;
+}
+
+.btn-custom:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 25px rgba(255, 87, 51, 0.5);
+}
+
+/* Select Dropdown */
+.form-select {
+    background-color: #1c2331;
+    color: white;
+    border: 2px solid #ffcc00;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-select:focus {
+    border-color: #ff5733;
+    box-shadow: 0px 0px 10px rgba(255, 87, 51, 0.7);
+}
+
+/* Footer Styling */
+/* footer {
+    background: linear-gradient(to right, #1c2331, #343a40);
+    padding: 20px;
+    text-align: center;
+}
+
+footer i {
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+footer i:hover {
+    color: #ffcc00;
+} */
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ffcc00, #ff5733);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1s ease-in-out;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ffcc00, #ff5733);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dark mode styles */
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navbar in dark mode */
+.dark-mode .navbar {
+    background-color: #1c1c1c; /* Dark background for navbar */
+}
+
+.dark-mode .navbar .nav-link {
+    color: #ffffff !important; /* White text for navbar links */
+}
+
+.dark-mode .navbar .nav-link:hover {
+    color: #7c4dff !important; /* Purple text on hover */
+}
+
+.dark-mode .navbar .dropdown-menu {
+    background-color: #2d2d2d; /* Dark background for dropdown */
+}
+
+.dark-mode .navbar .dropdown-item {
+    color: #ffffff !important; /* White text for dropdown items */
+}
+
+.dark-mode .navbar .dropdown-item:hover {
+    background-color: #7c4dff; /* Purple background on hover */
+    color: #ffffff !important;
+}
+
+/* Other dark mode styles */
+.dark-mode .card {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+.dark-mode .form-control {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+.dark-mode .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.dark-mode .btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark-mode marquee {
+    color: #ff0000; /* Adjust marquee color for dark mode */
+}
+
+.dark-mode footer {
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+.dark-mode footer a {
+    color: #ffffff;
+}
+
+.dark-mode footer a:hover {
+    color: #7c4dff;
+}
